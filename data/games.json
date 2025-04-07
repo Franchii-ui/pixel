@@ -1,0 +1,60 @@
+[
+    {
+      "id": "MarioKart",
+      "title": "Mario Kart World",
+      "description": "90 lucas para un juego de carreras de mundo abierto, el The Crew de los chavos.",
+      "genre": "racing",
+      "releaseStatus": "released",
+      "image": "assets/images/mk.jpg",
+      "details": "More extensive details about Echoes of the Ancients..."
+    },
+    {
+      "id": "Fifa",
+      "title": "FC Club",
+      "description": "Entrega anual de furbo, pero ahora con un modo historia.",
+      "genre": "sports",
+      "releaseStatus": "released",
+      "image": "assets/images/fifa.jpg",
+      "details": "More extensive details about Tactical Titans..."
+    },
+    {
+      "id": "puzle",
+      "title": "Breath of the Wild",
+      "description": "Un juego de aventuras en un mundo abierto lleno de acertijos y exploración.",
+      "genre": "adventure",
+      "releaseStatus": "released",
+      "image": "assets/images/bow.jpg",
+      "details": "More extensive details about Breath of the Wild..."
+    },
+    {
+      "id": "camion",
+      "title": "Truck Simulator",
+      "description": "Juego de transportista de Amazon, visualiza tu futuro trabajo en Amazon. Y ahora con modo San Valentin.",
+      "genre": "simulation",
+      "releaseStatus": "realeased",
+      "image": "assets/images/truck.jpg",
+      "details": "More extensive details about Stellar Voyage..."
+    },
+    {
+      "id": "cxom",
+      "title": "XCOM2",
+      "description": "Invasiones alienígenas y estrategia táctica en un mundo post-apocalíptico.",
+      "genre": "strategy",
+      "releaseStatus": "released",
+      "image": "assets/images/xcom.jpeg",
+      
+      "details": "More extensive details about Stellar Voyage..."
+    },
+    {
+      "id": "mk",
+      "title": "Portal 2",
+      "description": "No había tarta. O alguien se la comió y se sentaron donde no debían.",
+      "genre": "puzzle",
+      "releaseStatus": "coming_soon",
+      "image": "assets/images/portal.jpg",
+      "details": "More extensive details about Stellar Voyage..."
+    }
+  ]
+  
+  
+  

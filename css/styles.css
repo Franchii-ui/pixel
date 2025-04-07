@@ -1,0 +1,116 @@
+/* === Estilos Globales === */
+/* Fondo claro por defecto con transición suave para cambios de tema */
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    transition: background-color 0.3s ease; /* Transición suave para cambios de tema */
+}
+
+/* === Tema Oscuro === */
+/* dark-mode.css */
+body.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #444;
+    border-color: #444;
+    color: #eee;
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #444;
+}
+
+.dark-mode .dropdown-item {
+    color: #eee;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #555;
+}
+
+.dark-mode .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .pagination .page-link {
+    background-color: #444;
+    border-color: #555;
+    color: #eee;
+}
+
+.dark-mode .pagination .page-link:hover {
+    background-color: #555;
+}
+
+.dark-mode .pagination .page-item.active .page-link {
+    background-color: #666;
+    border-color: #666;
+}
+
+.dark-mode .form-check-label{
+    color: #eee !important;
+}
+
+.dark-mode h2{
+    color: #eee !important;
+}
+
+
+/* === Imágenes de Juegos === */
+/* Estilo para las imágenes de las tarjetas de juegos */
+.game-image {
+    height: 200px; /* Altura fija para mantener consistencia */
+    object-fit: cover; /* Mantiene la proporción y llena el área */
+}
+
+/* Placeholder para imágenes faltantes */
+.game-image-placeholder {
+    height: 200px; /* Misma altura que las imágenes reales */
+    background-color: #e9ecef; /* Fondo gris claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d; /* Texto gris */
+    font-style: italic; /* Estilo para indicar que es un placeholder */
+}
+
+/* Ajustes para el tema oscuro en placeholders */
+[data-bs-theme="dark"] .game-image-placeholder {
+    background-color: #495057; /* Fondo más oscuro */
+    color: #adb5bd; /* Texto gris claro */
+}
+
+/* === Carrusel === */
+/* Estilo para las imágenes del carrusel */
+.carousel-image {
+    height: 400px; /* Ajusta según el diseño deseado */
+    width: 100%; /* Ancho completo */
+    object-fit: cover; /* Mantiene la proporción y llena el área */
+    filter: brightness(0.8); /* Oscurece ligeramente para resaltar el texto */
+    object-position: center; /* Centra la imagen */
+}
+
+/* === Animaciones === */
+/* Animación de entrada suave para elementos */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Clase para aplicar la animación */
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* === Vista
