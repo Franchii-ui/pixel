@@ -1,0 +1,326 @@
+/* === Estilos Globales === */
+/* Fondo claro por defecto con transición suave para cambios de tema */
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    transition: background-color 0.3s ease; /* Transición suave para cambios de tema */
+}
+
+/* === Tema Oscuro === */
+/* dark-mode.css */
+body.dark-mode {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #444;
+    border-color: #444;
+    color: #eee;
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+.dark-mode .dropdown-menu {
+    background-color: #444;
+}
+
+.dark-mode .dropdown-item {
+    color: #eee;
+}
+
+.dark-mode .dropdown-item:hover {
+    background-color: #555;
+}
+
+.dark-mode .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .pagination .page-link {
+    background-color: #444;
+    border-color: #555;
+    color: #eee;
+}
+
+.dark-mode .pagination .page-link:hover {
+    background-color: #555;
+}
+
+.dark-mode .pagination .page-item.active .page-link {
+    background-color: #666;
+    border-color: #666;
+}
+
+.dark-mode .form-check-label{
+    color: #eee !important;
+}
+
+.dark-mode h2{
+    color: #eee !important;
+}
+
+
+/* === Imágenes de Juegos === */
+/* Estilo para las imágenes de las tarjetas de juegos */
+.game-image {
+    height: 200px; /* Altura fija para mantener consistencia */
+    object-fit: cover; /* Mantiene la proporción y llena el área */
+}
+
+/* Placeholder para imágenes faltantes */
+.game-image-placeholder {
+    height: 200px; /* Misma altura que las imágenes reales */
+    background-color: #e9ecef; /* Fondo gris claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d; /* Texto gris */
+    font-style: italic; /* Estilo para indicar que es un placeholder */
+}
+
+/* Ajustes para el tema oscuro en placeholders */
+[data-bs-theme="dark"] .game-image-placeholder {
+    background-color: #495057; /* Fondo más oscuro */
+    color: #adb5bd; /* Texto gris claro */
+}
+
+/* === Carrusel === */
+/* Estilo para las imágenes del carrusel */
+.carousel-image {
+    height: 400px; /* Ajusta según el diseño deseado */
+    width: 100%; /* Ancho completo */
+    object-fit: cover; /* Mantiene la proporción y llena el área */
+    filter: brightness(0.8); /* Oscurece ligeramente para resaltar el texto */
+    object-position: center; /* Centra la imagen */
+}
+
+/* === Animaciones === */
+/* Animación de entrada suave para elementos */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Clase para aplicar la animación */
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* === Nuevos estilos para las páginas === */
+
+/* Estilos para New Releases */
+.featured-release .card {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.featured-release .card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-release .card img {
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featured-release .card:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilos para Coming Soon */
+.countdown-container {
+    margin-bottom: 3rem;
+}
+
+.countdown-item {
+    background-color: rgba(239, 71, 111, 0.1);
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ef476f;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.coming-soon-spotlight {
+    transition: transform 0.3s ease;
+}
+
+.coming-soon-spotlight:hover {
+    transform: translateY(-5px);
+}
+
+.upcoming-list .list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 15px 5px;
+    transition: background-color 0.2s ease;
+}
+
+.upcoming-list .list-group-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.newsletter-signup {
+    background: linear-gradient(135deg, #ef476f 0%, #ff8a5b 100%);
+    color: white;
+    border: none;
+}
+
+.newsletter-signup .form-control {
+    border: none;
+    padding: 12px;
+}
+
+.newsletter-signup .btn {
+    border: none;
+    background-color: #073b4c;
+}
+
+/* Estilos para About Us */
+.team-card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Improved Team Avatar Styling */
+.team-avatar {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    background-color: #f9f9f9; /* Light background for images with transparency */
+}
+
+.team-avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #ef476f;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    filter: brightness(1.05) contrast(1.05);
+}
+
+.team-avatar img:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* Fallback styles for poor quality images */
+.team-avatar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, transparent 60%, rgba(239, 71, 111, 0.1) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Add error handling for broken images */
+.card-body {
+    position: relative;
+}
+
+.team-avatar img:not([src]), 
+.team-avatar img[src=""], 
+.team-avatar img:not([src=""]):not([src]):not(.error-handled) {
+    opacity: 0;
+}
+
+.team-avatar img:not([src]),
+.team-avatar img[src=""] {
+    background-color: #e9ecef;
+}
+
+/* Add specific debug style for member2 */
+.team-avatar img[src*="member2"] {
+    border-color: #2ecc71; /* Green border to distinguish member2 */
+}
+
+/* Improve error handling for broken images with informative content */
+.team-avatar img:not([src]), 
+.team-avatar img[src=""], 
+.team-avatar img:not([src=""]):not([src]).error-handled,
+.team-avatar img[src$=".png"]:not([src*="data:"]):not(:has(img[src$=".png"])) {
+    background: #f8d7da;
+    position: relative;
+}
+
+.team-avatar img:not([src])::after, 
+.team-avatar img[src=""]::after,
+.team-avatar img.error-handled::after {
+    content: "Image not found";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #721c24;
+    text-align: center;
+    width: 80%;
+}
+
+.social-links .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+/* Adaptaciones para el tema oscuro */
+.dark-mode .countdown-item {
+    background-color: rgba(239, 71, 111, 0.2);
+}
+
+.dark-mode .team-card,
+.dark-mode .coming-soon-spotlight {
+    background-color: #444;
+}
+
+.dark-mode .countdown-value {
+    color: #ff8a5b;
+}
+
+.dark-mode .upcoming-list .list-group-item {
+    background-color: #444;
+    border-color: #555;
+}
+
+.dark-mode .upcoming-list .list-group-item:hover {
+    background-color: #555;
+}
+
+.dark-mode .newsletter-signup {
+    background: linear-gradient(135deg, #ef476f 0%, #d62828 100%);
+}

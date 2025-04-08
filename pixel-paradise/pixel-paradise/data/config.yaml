@@ -1,0 +1,39 @@
+visual:
+  theme: light               # Opciones: light, dark
+  showImages: true           # Mostrar imágenes en las tarjetas
+  animations: fade           # Tipo de animaciones: fade, slide, none
+
+pagination:
+  itemsPerPage: 3            # Número máximo de elementos por página
+
+language: es               # Idioma de la interfaz: es, en, etc.
+
+releaseFilters:              # Filtros para el estado de lanzamiento
+  showReleased: true         # Mostrar juegos lanzados
+  showComingSoon: true       # Mostrar juegos próximos
+
+accessibility:
+  highContrast: false        # Modo de alto contraste
+  fontSize: medium           # Tamaño de fuente: small, medium, large
+
+  
+# This is the data.yaml file, used to control which games are displayed.
+# It's currently commented out, so it won't affect the website.
+
+# display:  # This section defines the display settings.
+#   maxGames: 3 # This sets the maximum number of games to display.
+#   gameIds: # This is a list of game IDs to display.
+#     - echoes-ancients # Example game ID.
+#     - tactical-titans # Another example game ID.
+#     - mind-maze # Another example game ID.
+#     - stellar-voyage # Another example game ID.
+#     - mk # Another example game ID.
+
+# Explanation:
+# - This file is written in YAML, a human-readable data serialization language.
+# - The '#' symbol indicates a comment. Anything after '#' on a line is ignored.
+# - The 'display' section is a key that contains other settings.
+# - 'maxGames' determines how many games will be shown on the page.
+# - 'gameIds' is a list of IDs. The code will look for games with these IDs in the games.json file.
+# - You can add or remove game IDs here to change which games are displayed.
+# - If you want to use this file, you need to remove the '#' from the start of each line.
